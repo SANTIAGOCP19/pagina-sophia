@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- 🔥 CLAVE PARA CELULAR -->
+<!-- 🔥 RESPONSIVE -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Entre Girasoles y Circuitos 💜</title>
@@ -47,9 +47,9 @@ h1 {
     flex-wrap: wrap;
 }
 
-.images img {
+.foto {
     width: 100%;
-    max-width: 280px; /* 🔥 se adapta */
+    max-width: 300px; /* 🔥 tamaño en PC */
     height: auto;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -59,7 +59,7 @@ h1 {
 .buttons {
     margin-top: 30px;
     position: relative;
-    height: 180px;
+    height: 200px;
 }
 
 button {
@@ -101,7 +101,7 @@ button {
     }
 }
 
-/* 📱 AJUSTES PARA CELULAR */
+/* 📱 CELULAR */
 @media (max-width: 600px) {
 
     h1 {
@@ -111,6 +111,10 @@ button {
     .story {
         font-size: 0.9rem;
         padding: 15px;
+    }
+
+    .foto {
+        max-width: 90%;
     }
 
     .buttons {
@@ -186,8 +190,8 @@ Porque a veces… lo más inesperado, es lo más hermoso 💜✨
 </div>
 
 <div class="images">
-    <img src="fofi.png">
-    <img src="san.png">
+    <img src="fofi.png" class="foto">
+    <img src="san.png" class="foto">
 </div>
 
 <h2>💜 ¿Quieres quedarte conmigo hasta que el sentir de ambos no lo permita?</h2>
@@ -204,13 +208,13 @@ const noBtn = document.getElementById("noBtn");
 
 const frases = [
     "¿Segura phia? 😢",
-    "No hagas eso fofi 😭",
+    "No hagas eso 😭",
     "Piénsalo otra vez 💔",
     "Me vas a romper el corazón 🥺",
     "Mejor di que sí 💜"
 ];
 
-// 👉 FUNCION PARA MOVER
+// FUNCIÓN PARA MOVER BOTÓN
 function moverBoton() {
     const x = Math.random() * (window.innerWidth - 120);
     const y = Math.random() * (window.innerHeight - 80);
@@ -224,13 +228,13 @@ function moverBoton() {
     noBtn.innerText = frases[Math.floor(Math.random() * frases.length)];
 }
 
-// PC (mouse)
+// PC
 noBtn.addEventListener("mouseover", moverBoton);
 
-// 📱 CELULAR (toque)
+// 📱 CELULAR
 noBtn.addEventListener("touchstart", moverBoton);
 
-// CORAZONES
+// CORAZONES 💜
 function loveExplosion() {
     alert("💜 Sabía que dirías que sí fofi...");
 
