@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<!-- 🔥 CLAVE PARA CELULAR -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Entre Girasoles y Circuitos 💜</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a0dad, #ffffff);
+    text-align: center;
+}
+
+/* CONTENEDOR */
+.container {
+    padding: 30px 15px;
+}
+
+/* TITULO */
+h1 {
+    font-size: 1.8rem;
+}
+
+/* HISTORIA */
+.story {
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* IMÁGENES */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.images img {
+    width: 100%;
+    max-width: 280px; /* 🔥 se adapta */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* BOTONES */
+.buttons {
+    margin-top: 30px;
+    position: relative;
+    height: 180px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.yes {
+    background-color: purple;
+    color: white;
+    margin-right: 10px;
+}
+
+.no {
+    background-color: gray;
+    color: white;
+    position: absolute;
+}
+
+/* CORAZONES */
+.heart {
+    position: fixed;
+    color: purple;
+    font-size: 20px;
+    animation: float 2s linear forwards;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+/* 📱 AJUSTES PARA CELULAR */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .story {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    .buttons {
+        height: 220px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌻 Entre Girasoles y Circuitos 💜</h1>
+
+<div class="story">
+<p>
+Había una vez, en un lugar donde los mundos no solían encontrarse, dos realidades completamente diferentes…
+
+En el Reino de los Sueños Morados, vivía la princesita Sophia. Su castillo estaba rodeado de girasoles gigantes que siempre miraban al sol, y el cielo brillaba en tonos violetas al atardecer.
+
+Pero Sophia no era una princesa común.
+
+Además de amar la fantasía y el color morado, tenía un corazón enorme por los niños. Le encantaba enseñarles, escuchar sus historias y ver cómo aprendían con ilusión. Por eso, también era profesora. Cada mañana, reunía a pequeños del reino y les enseñaba que la magia más poderosa era el conocimiento.
+
+Muy lejos de allí, en la Ciudad Blanca de la Tecnología, vivía Santiago…
+
+Su mundo estaba lleno de luces, inventos y máquinas increíbles. Amaba el color blanco porque representaba orden, claridad y nuevos comienzos. Era inteligente, valiente… pero había algo que aún no conocía: la magia de alguien especial.
+
+Un día, algo inesperado ocurrió…
+
+Un portal se abrió.
+
+Y en un instante, Sophia apareció en su mundo.
+
+—¿Dónde estoy? —preguntó confundida.
+
+Santiago la vio… y sintió que todo cambió.
+
+—No te preocupes —le dijo—. Yo te voy a ayudar.
+
+Desde ese momento, comenzaron a descubrirse.
+
+Sophia le enseñó a Santiago a ver la vida con más emoción, a valorar lo simple… incluso llevó su amor por la enseñanza a la ciudad, creando pequeños espacios donde los niños aprendían entre luces y magia.
+
+Santiago, por su parte, le mostró un mundo lleno de posibilidades. Juntos crearon herramientas para enseñar mejor, mezclando tecnología con fantasía.
+
+Pero el destino no sería tan fácil…
+
+El portal comenzó a cerrarse.
+
+Sophia debía decidir.
+
+Volver a su reino… o quedarse.
+
+Santiago luchó. Construyó, investigó, intentó todo… porque no quería perderla.
+
+—Quiero construir algo contigo —le dijo—. Algo que no tenga final obligado.
+
+Sophia sonrió.
+
+Y decidió quedarse.
+
+No solo por amor… sino porque entendió que juntos podían crear algo aún más grande: un mundo donde los niños aprendieran con magia y tecnología.
+
+Y así nació un nuevo lugar…
+
+Un mundo donde los girasoles brillaban con luz eléctrica, donde los cuentos vivían en pantallas, y donde dos corazones diferentes construyeron algo único.
+
+Porque a veces… lo más inesperado, es lo más hermoso 💜✨
+</p>
+</div>
+
+<div class="images">
+    <img src="fofi.png">
+    <img src="san.png">
+</div>
+
+<h2>💜 ¿Quieres quedarte conmigo hasta que el sentir de ambos no lo permita?</h2>
+
+<div class="buttons">
+    <button class="yes" onclick="loveExplosion()">Sí 💜</button>
+    <button class="no" id="noBtn">No 😢</button>
+</div>
+
+</div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+
+const frases = [
+    "¿Segura phia? 😢",
+    "No hagas eso fofi 😭",
+    "Piénsalo otra vez 💔",
+    "Me vas a romper el corazón 🥺",
+    "Mejor di que sí 💜"
+];
+
+// 👉 FUNCION PARA MOVER
+function moverBoton() {
+    const x = Math.random() * (window.innerWidth - 120);
+    const y = Math.random() * (window.innerHeight - 80);
+
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+
+    const scale = Math.random() * 1.5 + 0.5;
+    noBtn.style.transform = "scale(" + scale + ")";
+
+    noBtn.innerText = frases[Math.floor(Math.random() * frases.length)];
+}
+
+// PC (mouse)
+noBtn.addEventListener("mouseover", moverBoton);
+
+// 📱 CELULAR (toque)
+noBtn.addEventListener("touchstart", moverBoton);
+
+// CORAZONES
+function loveExplosion() {
+    alert("💜 Sabía que dirías que sí fofi...");
+
+    for (let i = 0; i < 25; i++) {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerText = "💜";
+
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.bottom = "0px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 2000);
+    }
+}
+</script>
+
+</body>
+</html>
